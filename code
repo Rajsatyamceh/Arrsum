@@ -10,7 +10,12 @@ int main()
 
     printf("\n\nEnter %d integers \n\n", n);
 
-    
+    for(c = 0; c < n; c++)
+    {
+        scanf("%d", &array[c]);
+        sum += array[c];    // same as sum = sum + array[c]
+    }
+
     printf("\n\nSum = %d\n\n", sum);
     printf("\n\n\t\t\tCoding is Fun !\n\n\n");
     return 0;
